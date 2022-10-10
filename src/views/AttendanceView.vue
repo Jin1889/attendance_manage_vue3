@@ -205,7 +205,14 @@ function handleCurrentChange(val: number) {
   getTableList();
 }
 </script>
-
-<style>
-
+<style lang="less" scoped>
+.add {
+  margin-bottom: 0.5rem;
+}
+.delete {
+  margin-left: 0.5rem;
+}
+.el-pagination {
+  margin-top: 0.5rem;
+}
 </style>

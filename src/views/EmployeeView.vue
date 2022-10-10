@@ -199,7 +199,7 @@ type typeEmployee = {
     gender: number;
     age: number;
     tel: string;
-    entry_time: string;
+    entry_time: string|null;
     department_id: number;
     role_id: number;
   };

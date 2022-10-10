@@ -35,6 +35,18 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '/attendance',
         component: () => import('../views/AttendanceView.vue'),
+      },
+      {
+        path: '/leave',
+        component: () => import('../views/LeaveView.vue'),
+      },
+      {
+        path: '/leaveType',
+        component: () => import('../views/LeaveTypeView.vue'),
+      },
+      {
+        path: '/role',
+        component: () => import('../views/RoleView.vue'),
       }
     ]
   }

@@ -1,6 +1,6 @@
 <template>
     <el-select v-model="attendanceState" clearable placeholder="请选择">
-        <el-option v-for="item in options" :key="item.id" :label="item.attendance_state" :value="item.id">
+        <el-option v-for="item in options" :key="item['id']" :label="item['attendance_state']" :value="item['id']">
         </el-option>
     </el-select>
 </template>
