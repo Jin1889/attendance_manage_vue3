@@ -80,6 +80,8 @@ const submitForm = (formEl: FormInstance | undefined) => {
       // console.log("submit!");
       const { data: res } = await proxy.$http.post("api/login", loginForm);
       if (res.status != 200) return alert(res.message);
+      window.sessionStorage.setItem("token", res.token)
+      // 2.通过编程式导航跳转到后台主页,路由地址是 /home
       $router.push({path: 'home'})
       // console.log(res);
     } else {

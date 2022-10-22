@@ -98,7 +98,7 @@ const logout = (text: string) => {
   if (text === exit.value) {
     // window.sessionStorage.removeItem("token");
     window.sessionStorage.clear();
-    // this.$router.push("/login");
+    this.$router.push("/login");
   }
 };
 
